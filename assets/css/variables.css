@@ -1,0 +1,164 @@
+/* =====================================================
+VARIABLES
+Design System + Bootstrap Overrides
+===================================================== */
+
+:root {
+  /* ======================================
+BOOTSTRAP OVERRIDES
+====================================== */
+
+  --bs-primary: #a41034;
+  --bs-font-sans-serif: "Inter", sans-serif;
+  --bs-body-color: #1d1d1d;
+
+  --bs-link-color: #a41034;
+  --bs-link-hover-color: #7a0b22;
+
+  /* ======================================
+COLORS
+====================================== */
+
+  --color-crimson: #a41034;
+  --color-crimson-dark: #7a0b22;
+
+  --color-black: #1d1d1d;
+
+  --color-offwhite: #f5f4f0;
+
+  --color-white: #ffffff;
+
+  /* ======================================
+TYPOGRAPHY
+====================================== */
+
+  --font-heading: "EB Garamond", serif;
+
+  --font-body: "Inter", sans-serif;
+
+  /* Font sizes */
+
+  --fs-xs: 0.75rem; /* 12 */
+  --fs-sm: 0.875rem; /* 14 */
+
+  --fs-base: 1rem; /* 16 */
+
+  --fs-md: 1.125rem; /* 18 */
+
+  --fs-lg: 1.5rem; /* 24 */
+
+  --fs-xl: 2rem; /* 32 */
+
+  --fs-2xl: 3rem; /* 48 */
+
+  --fs-3xl: 4rem; /* 64 */
+
+  --fs-hero: 5.5rem;
+
+  /* Line Heights */
+
+  --lh-tight: 1.05;
+
+  /* --lh-heading: 1.15;
+
+  --lh-body: 1.75; */
+  /* polishing */
+  /* HBS typography rhythm */
+
+  --lh-tight: 0.92;
+
+  --lh-heading: 0.95;
+
+  --lh-body: 1.55;
+  /* ======================================
+SPACING
+(Bootstrap Compatible Scale)
+====================================== */
+
+  --space-1: 0.25rem;
+
+  --space-2: 0.5rem;
+
+  --space-3: 0.75rem;
+
+  --space-4: 1rem;
+
+  --space-5: 1.5rem;
+
+  --space-6: 2rem;
+
+  --space-7: 3rem;
+
+  --space-8: 4rem;
+
+  --space-9: 6rem;
+
+  --space-10: 8rem;
+
+  /* Shared Section Spacing */
+
+  --section-space-sm: 5rem;
+
+  --section-space: 7rem;
+
+  --section-space-lg: 9rem;
+
+  /* ======================================
+RADIUS
+====================================== */
+
+  --radius-sm: 6px;
+
+  --radius-md: 12px;
+
+  --radius-lg: 18px;
+
+  --radius-pill: 999px;
+
+  /* ======================================
+TRANSITIONS
+====================================== */
+
+  --transition-fast: 0.2s ease;
+
+  --transition: 0.35s ease;
+
+  --transition-slow: 0.6s ease;
+
+  /* Sticky Header */
+
+  --header-transition: 0.45s ease;
+
+  /* ======================================
+SHADOWS
+====================================== */
+
+  --shadow-sm: 0 4px 12px rgb(0 0 0 / 8%);
+
+  --shadow-md: 0 12px 30px rgb(0 0 0 / 10%);
+
+  --shadow-lg: 0 20px 60px rgb(0 0 0 / 15%);
+
+  /* ======================================
+LAYOUT
+====================================== */
+
+  --container: 1320px;
+
+  --container-narrow: 1180px;
+  /* polishing */
+  --container-wide: 1720px;
+  --container-content: 1480px;
+
+  /* ======================================
+Z INDEX
+====================================== */
+
+  --z-header: 1000;
+
+  --z-dropdown: 1100;
+
+  --z-overlay: 1200;
+
+  --z-modal: 1300;
+}
