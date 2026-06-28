@@ -137,31 +137,16 @@ MISSION TOPPER
 
 .mission-media {
   position: relative;
-
   width: 100%;
-  width: calc(100% - 56px); /* 28px left + right */
-
-  max-width: 1800px;
-
-  aspect-ratio: 3 / 2;
-
-  margin: 40px auto 0;
-
-  overflow: visible;
+  height: 680px;
+  margin-top: 60px;
 }
+
 .mission-bg {
   width: 100%;
-
   height: 100%;
-
   background-size: cover;
-
   background-position: center;
-
-  transition: 0.5s;
-  /* keep */
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 /* HBS floating card */
@@ -1375,7 +1360,7 @@ SECTION 3 — SPLITTOPPER
     #bc0038 100%
   );
 
-  padding-top: 180px;
+  padding-top: 100px;
 
   padding-bottom: 110px;
 
@@ -1408,7 +1393,7 @@ SECTION 3 — SPLITTOPPER
   max-width: 720px;
 }
 .about-topper-text {
-  font-size: 21px;
+  font-size: 20px;
 
   line-height: 1.55;
 
@@ -1434,11 +1419,11 @@ SECTION 3 — SPLITTOPPER
 
   width: 620px;
 
-  padding: 24px 0;
+  padding: 16px 0;
 
   border-top: 1px solid rgba(255, 255, 255, 0.28);
 
-  font-size: 26px;
+  font-size: 18px;
 
   font-weight: 700;
 
@@ -1450,13 +1435,19 @@ SECTION 3 — SPLITTOPPER
 .about-link:last-child {
   border-bottom: 1px solid rgba(255, 255, 255, 0.28);
 }
-/* hover */
-.about-link span {
-  transition: 0.25s;
+.about-link {
+  color: #fff;
+  transition: none;
 }
 
 .about-link:hover {
-  opacity: 0.82;
+  color: #fff;
+  opacity: 1;
+}
+
+.about-link span {
+  display: inline-block;
+  transition: transform 0.25s ease;
 }
 
 .about-link:hover span {

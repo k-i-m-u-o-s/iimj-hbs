@@ -225,3 +225,48 @@ document.querySelectorAll(".menu-panel a").forEach((link) => {
     e.preventDefault();
   });
 });
+/* =====================================================
+SEARCH OVERLAY
+===================================================== */
+
+const searchOverlay = document.querySelector(".search-overlay");
+
+const headerSearch = document.querySelector(".header-search");
+
+const overlaySearch = document.querySelector(".overlay-search");
+
+const searchClose = document.querySelector(".search-close");
+
+const searchInput = document.querySelector(".search-input-wrap input");
+
+function openSearch() {
+  document.body.classList.remove("menu-open");
+
+  searchOverlay.classList.add("is-open");
+
+  setTimeout(() => {
+    searchInput.focus();
+  }, 100);
+}
+
+function closeSearch() {
+  searchOverlay.classList.remove("is-open");
+}
+
+headerSearch?.addEventListener("click", openSearch);
+
+overlaySearch?.addEventListener("click", openSearch);
+
+searchClose?.addEventListener("click", closeSearch);
+
+searchOverlay?.addEventListener("click", (e) => {
+  if (e.target === searchOverlay) {
+    closeSearch();
+  }
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeSearch();
+  }
+});
