@@ -1056,12 +1056,12 @@ STEP 4.12
 
   justify-content: space-between;
 
-  padding: 18px 28px 0;
+  padding: 18px 18px 0;
 
   flex-shrink: 0;
 }
 .overlay-logo img {
-  height: 96px;
+  height: 102px;
 
   display: block;
 
