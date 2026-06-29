@@ -3,15 +3,15 @@ MISSION TOPPER
 ===================================================== */
 
 const slides = [
-  {
-    label: "",
+  // {
+  //   label: "",
 
-    backgroundImage: "assets/images/home/hero-0.webp",
+  //   backgroundImage: "assets/images/home/hero-0.webp",
 
-    supportingText: "Inspiring future generations.",
+  //   supportingText: "Inspiring future generations.",
 
-    keyword: false,
-  },
+  //   keyword: false,
+  // },
   {
     label: "educate leaders",
 
@@ -165,7 +165,9 @@ document
 
 console.log("HOME JS RUNNING");
 
-renderSlide(0);
+bg.style.backgroundImage = "url('assets/images/home/hero-0.webp')";
+card.classList.add("is-hidden");
+activeIndex = -1;
 
 /* =====================================================
 SECTION 5 — SCROLL REACTIVE KEYWORDS

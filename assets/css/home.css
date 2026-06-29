@@ -24,20 +24,25 @@ MISSION TOPPER
   background: #ffffff;
 
   padding-top: 160px;
-
-  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+  padding-bottom: 0px;
+  /* justify-content: center; */
 }
 
 /* TEXT */
 
 .mission-content {
-  max-width: 1880px;
-
-  padding: 0 38px;
+  max-width: 1800px;
+  margin: 0 auto;
+  /* padding: 0 38px; */
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .mission-title {
-  max-width: 1780px;
+  max-width: 1500px;
 
   font-family: var(--font-body);
 
@@ -64,6 +69,7 @@ MISSION TOPPER
   column-gap: 0.18em;
 
   row-gap: 0.08em;
+  /* padding-bottom: 0; */
 }
 /* KEYWORDS */
 
@@ -137,12 +143,12 @@ MISSION TOPPER
 
 .mission-media {
   position: relative;
-  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
   height: 760px;
-  margin-top: -25px;
-  padding-left: 20px;
-  padding-right: 20px;
-  /* padding-bottom: 0; */
+  width: 100%;
+  /* padding-left: 20px; */
+  /* padding-right: 20px; */
 }
 
 .mission-bg {
@@ -324,6 +330,16 @@ HBS HERO ARROWS
 .mission-arrow:focus {
   outline: none;
 }
+
+.programs-tease .container-fluid,
+.commencement .container-fluid,
+.bold-thinkers .container-fluid,
+.insights-section .container-fluid,
+.distinctive .container-fluid {
+  max-width: 1880px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 /* =====================================================
 SECTION 2 — PROGRAMS TEASE
 ===================================================== */
@@ -336,6 +352,8 @@ SECTION 2 — PROGRAMS TEASE
   padding-top: 0px;
 
   padding-bottom: 96px;
+  /* padding-right: 20px;
+  padding-left: 20px; */
 }
 
 /* ---------------------------------- */
@@ -1185,13 +1203,14 @@ SECTION 8 — DISTINCTIVE
   padding-bottom: 118px;
 }
 
-.distinctive .container-fluid {
+/* .distinctive .container-fluid {
   padding-left: 32px;
 
   padding-right: 32px;
 
   max-width: 1880px;
-}
+  margin: 0 auto;
+} */
 
 /* TITLE */
 
@@ -1352,6 +1371,19 @@ SECTION 8 — DISTINCTIVE
     height: 520px;
   }
 }
+
+.about-topper .container-fluid,
+.about-breadcrumbs .container-fluid,
+.about-programs .container-fluid,
+.campus-research .container-fluid,
+.about-research .container-fluid,
+.about-press .container-fluid,
+.about-statistics .container-fluid,
+.annual-report .container-fluid {
+  max-width: 1880px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 /* ==========================================
 ABOUT PAGE
 SECTION 3 — SPLITTOPPER
@@ -1372,6 +1404,7 @@ SECTION 3 — SPLITTOPPER
   min-height: 900px;
 
   overflow: hidden;
+  /* margin: 0 auto; */
 }
 .about-topper-content {
   padding-left: 80px;
@@ -1495,9 +1528,10 @@ SECTION 1 — BREADCRUMBS
 .about-breadcrumbs {
   background: var(--color-offwhite);
 
-  padding-top: 28px;
+  padding-top: 10px;
 
-  padding-bottom: 22px;
+  padding-bottom: 10px;
+  /* margin: 0 auto; */
 }
 
 /* row */
@@ -1737,13 +1771,14 @@ SECTION 5 — CAMPUS
 
   padding-bottom: 120px;
 }
-.campus-research .container-fluid {
+/* .campus-research .container-fluid {
   padding-left: 28px;
 
   padding-right: 28px;
 
   max-width: 1880px;
-}
+  margin: 0 auto;
+} */
 .campus-content {
   display: flex;
 
@@ -1862,11 +1897,12 @@ SECTION 6 — RESEARCH
   color: #fff;
 }
 
-.about-research .container-fluid {
+/* .about-research .container-fluid {
   max-width: 1880px;
   padding-left: 24px;
   padding-right: 24px;
-}
+  margin: 0 auto;
+} */
 .research-top {
   display: flex;
   justify-content: space-between;
@@ -2135,13 +2171,14 @@ SECTION 7 — PRESS RELEASES
 
 /* container */
 
-.about-press .container-fluid {
+/* .about-press .container-fluid {
   max-width: 1880px;
+  margin: 0 auto;
 
   padding-left: 28px;
 
   padding-right: 28px;
-}
+} */
 
 /* top row */
 
@@ -2358,13 +2395,14 @@ SECTION 8 — STATISTICS
 
 /* container */
 
-.about-statistics .container-fluid {
+/* .about-statistics .container-fluid {
   max-width: 1880px;
+  margin: 0 auto;
 
   padding-left: 28px;
 
   padding-right: 28px;
-}
+} */
 
 /* top */
 
@@ -2526,13 +2564,13 @@ SECTION 9 — ANNUAL REPORT
 
 /* container */
 
-.annual-report .container-fluid {
+/* .annual-report .container-fluid {
   max-width: 1880px;
-
+  margin: 0 auto;
   padding-left: 28px;
 
   padding-right: 28px;
-}
+} */
 
 /* full blue panel */
 
