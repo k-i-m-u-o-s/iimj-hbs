@@ -129,8 +129,8 @@ CONTENT
 }
 
 .footer-logo {
-  width: 240px;
-
+  width: 120px;
+  /* padding-top: -40px; */
   display: block;
 }
 

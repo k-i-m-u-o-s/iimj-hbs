@@ -49,16 +49,30 @@ HEADER COLUMNS
 }
 /* Logo */
 
+.site-logo {
+  position: relative;
+  display: block;
+}
+
 .site-logo img {
+  display: block;
+  width: auto;
   height: 72px;
 
-  width: auto;
-
-  display: block;
-
   transition:
+    opacity 0.25s ease,
     height 0.35s ease,
     transform 0.35s ease;
+}
+
+.logo-default {
+  opacity: 1;
+}
+
+.logo-scrolled {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
 }
 .header-center {
   flex: 1;
@@ -73,7 +87,17 @@ HEADER COLUMNS
 
   transition: all 0.35s ease;
 }
+.about-logo img {
+  height: 102px;
 
+  width: auto;
+
+  display: block;
+
+  transition:
+    height 0.35s ease,
+    transform 0.35s ease;
+}
 .header-right {
   display: flex;
 
@@ -552,9 +576,16 @@ COMPRESSED HEADER
 }
 
 .header--transparent.scrolled .site-logo img {
-  height: 38px;
+  height: 60px;
 }
 
+.header--transparent.scrolled .logo-default {
+  opacity: 0;
+}
+
+.header--transparent.scrolled .logo-scrolled {
+  opacity: 1;
+}
 .header--transparent.scrolled .nav-link {
   min-height: 40px;
 }
