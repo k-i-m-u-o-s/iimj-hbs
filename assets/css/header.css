@@ -1061,11 +1061,12 @@ STEP 4.12
   flex-shrink: 0;
 }
 .overlay-logo img {
-  height: 102px;
+  /* height: 102px; */
+  width: 120px;
 
   display: block;
 
-  width: auto;
+  /* width: auto; */
 }
 .global-menu-middle {
   display: grid;
