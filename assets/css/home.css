@@ -25,7 +25,7 @@ MISSION TOPPER
 
   padding-top: 160px;
 
-  padding-bottom: 80px;
+  padding-bottom: 20px;
 }
 
 /* TEXT */
@@ -138,14 +138,18 @@ MISSION TOPPER
 .mission-media {
   position: relative;
   width: 100%;
-  height: 680px;
-  margin-top: 60px;
+  height: 760px;
+  margin-top: -25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* padding-bottom: 0; */
 }
 
 .mission-bg {
   width: 100%;
   height: 100%;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -154,15 +158,16 @@ MISSION TOPPER
 .mission-card {
   position: absolute;
 
-  top: 58px;
+  bottom: 88px;
 
-  left: 38px;
+  right: 38px;
 
-  bottom: auto;
+  /* bottom: auto; */
+  top: auto;
+  left: auto;
+  width: 360px;
 
-  width: 380px;
-
-  padding: 38px 30px;
+  padding: 24px 20px;
 
   background: #f6f6f6;
 
@@ -219,11 +224,11 @@ MISSION TOPPER
 }
 
 .mission-text {
-  font-size: 18px;
+  font-size: 16px;
 
-  line-height: 1.6;
+  line-height: 1.25;
 
-  margin-bottom: 34px;
+  margin-bottom: 26px;
 
   color: #111;
 
@@ -231,7 +236,7 @@ MISSION TOPPER
 }
 
 .mission-card-link {
-  font-size: 18px;
+  font-size: 16px;
 
   font-weight: 700;
 
@@ -247,7 +252,7 @@ HBS HERO ARROWS
 .mission-arrow {
   position: absolute;
 
-  top: 20px;
+  top: 90px;
 
   width: 44px;
 
@@ -289,11 +294,11 @@ HBS HERO ARROWS
 /* positions */
 
 .mission-prev {
-  right: 88px;
+  right: 98px;
 }
 
 .mission-next {
-  right: 24px;
+  right: 34px;
 }
 
 /* hover */
@@ -328,7 +333,7 @@ SECTION 2 — PROGRAMS TEASE
 
   /* equal top and bottom spacing */
 
-  padding-top: 18px;
+  padding-top: 0px;
 
   padding-bottom: 96px;
 }
@@ -344,7 +349,7 @@ SECTION 2 — PROGRAMS TEASE
 
   font-family: var(--font-body);
 
-  font-size: clamp(2.3rem, 3.9vw, 3.45rem);
+  font-size: clamp(1.9rem, 3.1vw, 2.8rem);
 
   line-height: 0.98;
 

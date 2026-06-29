@@ -1240,9 +1240,7 @@ OVERLAY HEADER
 
   transition: color 0.2s ease;
 }
-/* .submenu-trigger.is-active {
-  color: #fff;
-} */
+
 /* .global-menu-subcontent {
   overflow-y: auto;
 

@@ -4,6 +4,15 @@ MISSION TOPPER
 
 const slides = [
   {
+    label: "",
+
+    backgroundImage: "assets/images/home/hero-0.webp",
+
+    supportingText: "Inspiring future generations.",
+
+    keyword: false,
+  },
+  {
     label: "educate leaders",
 
     backgroundImage: "assets/images/home/hero-1.webp",
@@ -37,15 +46,15 @@ const slides = [
 
   /* extra image */
 
-  {
-    label: "",
+  // {
+  //   label: "",
 
-    backgroundImage: "assets/images/home/hero-4.webp",
+  //   backgroundImage: "assets/images/home/hero-4.webp",
 
-    supportingText: "Inspiring future generations.",
+  //   supportingText: "Inspiring future generations.",
 
-    keyword: false,
-  },
+  //   keyword: false,
+  // },
 
   {
     label: "",
