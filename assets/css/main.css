@@ -15,3 +15,6 @@
 /* 5 Page Styles */
 @import url("./home.css");
 @import url("./about.css");
+
+/* 6 themes */
+@import url("./themes.css");

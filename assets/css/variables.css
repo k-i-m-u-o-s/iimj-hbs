@@ -5,28 +5,47 @@ Design System + Bootstrap Overrides
 
 :root {
   /* ======================================
+THEME COLORS
+====================================== */
+
+  /* Default Theme */
+
+  --primary: #a41034;
+  --primary-dark: #7a0b22;
+
+  --secondary: #1d1d1d;
+
+  --surface: #f5f4f0;
+
+  --white: #ffffff;
+
+  /* ======================================
 BOOTSTRAP OVERRIDES
 ====================================== */
 
-  --bs-primary: #a41034;
-  --bs-font-sans-serif: "Inter", sans-serif;
-  --bs-body-color: #1d1d1d;
+  --bs-primary: var(--primary);
 
-  --bs-link-color: #a41034;
-  --bs-link-hover-color: #7a0b22;
+  --bs-font-sans-serif: "Inter", sans-serif;
+
+  --bs-body-color: var(--secondary);
+
+  --bs-link-color: var(--primary);
+
+  --bs-link-hover-color: var(--primary-dark);
 
   /* ======================================
-COLORS
+PROJECT COLORS
 ====================================== */
 
-  --color-crimson: #a41034;
-  --color-crimson-dark: #7a0b22;
+  --color-crimson: var(--primary);
 
-  --color-black: #1d1d1d;
+  --color-crimson-dark: var(--primary-dark);
 
-  --color-offwhite: #f5f4f0;
+  --color-black: var(--secondary);
 
-  --color-white: #ffffff;
+  --color-offwhite: var(--surface);
+
+  --color-white: var(--white);
 
   /* ======================================
 TYPOGRAPHY

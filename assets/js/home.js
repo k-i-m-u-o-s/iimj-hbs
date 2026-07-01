@@ -205,17 +205,17 @@ window.addEventListener("scroll", () => {
     let direction = 1;
 
     if (index === 0) {
-      speed = 0.35;
+      speed = 0.8;
       direction = -1;
     }
 
     if (index === 1) {
-      speed = 0.25;
+      speed = 0.65;
       direction = 1;
     }
 
     if (index === 2) {
-      speed = 0.32;
+      speed = 0.75;
       direction = -1;
     }
 

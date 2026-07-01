@@ -219,7 +219,7 @@ MISSION TOPPER
 
 /* arrow moves */
 
-.mission-card-link span {
+/* .mission-card-link span {
   display: inline-block;
 
   transition: transform 0.18s;
@@ -227,7 +227,7 @@ MISSION TOPPER
 
 .mission-card:hover .mission-card-link span {
   transform: translateX(10px);
-}
+} */
 
 .mission-text {
   font-size: 16px;
@@ -242,15 +242,38 @@ MISSION TOPPER
 }
 
 .mission-card-link {
-  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 
+  font-size: 16px;
   font-weight: 700;
 
-  color: #a41034;
+  color: #111;
 
-  transition: 0.22s;
+  transition: color 0.22s ease;
+}
+.mission-card-link .program-arrow {
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
 }
 
+.mission-card-link .program-arrow svg {
+  width: 100%;
+  height: 100%;
+
+  color: currentColor;
+}
+
+.mission-card:hover .mission-card-link .program-arrow svg {
+  animation: arrowSlide 0.45s ease;
+}
 /* ==========================
 HBS HERO ARROWS
 ========================== */
@@ -459,21 +482,54 @@ SECTION 2 — PROGRAMS TEASE
 .program-arrow {
   margin-top: auto;
 
-  display: inline-flex;
+  width: 26px;
+
+  height: 26px;
+
+  overflow: hidden;
+
+  display: flex;
 
   align-items: center;
 
-  font-size: 18px;
+  justify-content: center;
+}
+.program-arrow svg {
+  width: 100%;
 
-  font-weight: 400;
+  height: 100%;
 
-  line-height: 1;
+  color: #fff;
 
-  width: 22px;
+  transition: none;
+}
+.program-card:hover .program-arrow svg {
+  animation: arrowSlide 0.45s ease;
+}
+@keyframes arrowSlide {
+  0% {
+    transform: translateX(0);
 
-  height: 22px;
+    opacity: 1;
+  }
 
-  transition: transform 0.18s ease;
+  45% {
+    transform: translateX(18px);
+
+    opacity: 0;
+  }
+
+  46% {
+    transform: translateX(-18px);
+
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+
+    opacity: 1;
+  }
 }
 
 /* ---------------------------------- */
@@ -483,10 +539,12 @@ SECTION 2 — PROGRAMS TEASE
 .program-card:hover {
   background: #1d1d1d;
 }
-
-.program-card:hover .program-arrow {
+/* .program-card:hover .program-arrow span {
+  animation: programArrow 0.45s ease forwards;
+} */
+/* .program-card:hover .program-arrow {
   transform: translateX(8px);
-}
+} */
 
 /* ---------------------------------- */
 /* RESPONSIVE */
@@ -798,6 +856,7 @@ SECTION 4 — BOLD THINKERS
   display: flex;
 
   flex-direction: column;
+  padding-top: 22px;
 }
 
 /* INDIVIDUAL LINK */
@@ -809,11 +868,11 @@ SECTION 4 — BOLD THINKERS
 
   align-items: center;
 
-  padding: 20px 0;
+  padding: 16px 0;
 
   border-top: 1px solid #d6d3cf;
 
-  font-size: 22px;
+  font-size: 20px;
 
   font-weight: 700;
 
@@ -830,9 +889,9 @@ SECTION 4 — BOLD THINKERS
 
 /* ARROW */
 
-.bold-link span {
+/* .bold-link span {
   transition: 0.28s;
-}
+} */
 
 /* HOVER */
 
@@ -840,12 +899,34 @@ SECTION 4 — BOLD THINKERS
   color: var(--color-crimson);
 }
 
-.bold-link:hover span {
+/* .bold-link:hover span {
   color: var(--color-crimson);
 
   transform: translateX(8px);
+} */
+.bold-link .program-arrow {
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  margin-top: 0;
 }
 
+.bold-link .program-arrow svg {
+  width: 100%;
+  height: 100%;
+
+  color: currentColor;
+}
+
+.bold-link:hover .program-arrow svg {
+  animation: arrowSlide 0.45s ease;
+}
 /* MOBILE */
 
 @media (max-width: 991px) {
@@ -948,7 +1029,7 @@ SECTION 6 — INSIGHTS
 .insights-section {
   background: #1f1f1f;
 
-  padding: 90px 0 110px;
+  padding: 90px 0 20px 0;
 
   color: white;
 }
@@ -956,9 +1037,9 @@ SECTION 6 — INSIGHTS
 .insights-heading {
   font-family: var(--font-body);
 
-  font-size: clamp(64px, 6vw, 92px);
+  font-size: clamp(62px, 5.75vw, 89px);
 
-  font-weight: 800;
+  font-weight: 900;
 
   line-height: 0.88;
 
@@ -972,7 +1053,7 @@ SECTION 6 — INSIGHTS
 .insights-copy {
   max-width: 620px;
 
-  font-size: 18px;
+  font-size: 16px;
 
   line-height: 1.45;
 
@@ -988,7 +1069,7 @@ SECTION 6 — INSIGHTS
 
   gap: 12px;
 
-  font-size: 20px;
+  font-size: 16px;
 
   font-weight: 700;
 
@@ -1014,7 +1095,29 @@ SECTION 6 — INSIGHTS
 .insights-link:hover span {
   transform: translateX(8px);
 }
+*/ .insights-link .program-arrow {
+  width: 26px;
+  height: 26px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  margin-top: 0;
+}
+
+.insights-link .program-arrow svg {
+  width: 100%;
+  height: 100%;
+
+  color: currentColor;
+}
+
+.insights-link:hover .program-arrow svg {
+  animation: arrowSlide 0.45s ease;
+}
 .insights-grid {
   margin-top: 46px;
 }
@@ -1308,7 +1411,7 @@ SECTION 8 — DISTINCTIVE
 
   gap: 10px;
 
-  font-size: 18px;
+  font-size: 16px;
 
   font-weight: 700;
 
@@ -1330,7 +1433,29 @@ SECTION 8 — DISTINCTIVE
 .distinctive-link:hover span {
   transform: translateX(6px);
 }
+*/ .distinctive-link .program-arrow {
+  width: 26px;
+  height: 26px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  margin-top: 0;
+}
+
+.distinctive-link .program-arrow svg {
+  width: 100%;
+  height: 100%;
+
+  color: currentColor;
+}
+
+.distinctive-link:hover .program-arrow svg {
+  animation: arrowSlide 0.45s ease;
+}
 /* IMAGE */
 
 .distinctive-image {
@@ -1483,13 +1608,36 @@ SECTION 3 — SPLITTOPPER
   opacity: 1;
 }
 
-.about-link span {
+/* .about-link span {
   display: inline-block;
   transition: transform 0.25s ease;
 }
 
 .about-link:hover span {
   transform: translateX(8px);
+} */
+.about .program-arrow {
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  margin-top: 0;
+}
+
+.about-link .program-arrow svg {
+  width: 100%;
+  height: 100%;
+
+  color: currentColor;
+}
+
+.about-link:hover .program-arrow svg {
+  animation: arrowSlide 0.45s ease;
 }
 /* RIGHT COLUMN */
 .about-topper-image {
@@ -1619,7 +1767,7 @@ SECTION 4 — PROGRAMS
 
   margin: 0;
 }
-.about-programs-all {
+/* .about-programs-all {
   display: inline-flex;
 
   align-items: center;
@@ -1639,8 +1787,8 @@ SECTION 4 — PROGRAMS
   margin-top: 14px;
 
   transition: 0.18s ease;
-}
-.about-programs-all span {
+} */
+/* .about-programs-all span {
   transition: 0.25s;
 }
 
@@ -1648,8 +1796,57 @@ SECTION 4 — PROGRAMS
   color: var(--color-crimson);
 }
 
-.about-programs-all:hover span {
-  transform: translateX(6px);
+.about-programs-all:hover .program-arrow svg {
+  animation: arrowSlide 0.45s ease;
+} */
+.about-programs-all {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  font-family: var(--font-body);
+
+  font-size: clamp(16px, 1vw, 20px);
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  color: #111;
+
+  margin-top: 14px;
+
+  transition: color 0.25s ease;
+}
+
+.about-programs-all .program-arrow {
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  margin-top: 0;
+}
+
+.about-programs-all .program-arrow svg {
+  width: 100%;
+  height: 100%;
+
+  color: currentColor;
+}
+
+.about-programs-all:hover {
+  color: var(--color-crimson);
+}
+
+.about-programs-all:hover .program-arrow svg {
+  animation: arrowSlide 0.45s ease;
 }
 .about-program-card {
   display: flex;
@@ -1711,19 +1908,31 @@ SECTION 4 — PROGRAMS
 .about-program-arrow {
   margin-top: auto;
 
-  display: inline-flex;
+  display: flex;
 
   align-items: center;
 
-  font-size: 30px;
-
-  font-weight: 300;
-
-  line-height: 1;
-
   color: #111;
+}
 
-  transition: transform 0.18s ease;
+.about-program-arrow .program-arrow {
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  margin-top: 0;
+}
+
+.about-program-arrow .program-arrow svg {
+  width: 100%;
+  height: 100%;
+
+  color: currentColor;
 }
 .about-program-card:hover {
   background: #1d1d1d;
@@ -1734,10 +1943,17 @@ SECTION 4 — PROGRAMS
 .about-program-card:hover p {
   color: rgba(255, 255, 255, 0.88);
 }
-.about-program-card:hover .about-program-arrow {
+/* .about-program-card:hover .about-program-arrow {
   color: white;
 
   transform: translateX(8px);
+} */
+.about-program-card:hover .about-program-arrow {
+  color: white;
+}
+
+.about-program-card:hover .program-arrow svg {
+  animation: arrowSlide 0.45s ease;
 }
 .about-programs .row {
   --bs-gutter-x: 38px;
@@ -1831,7 +2047,7 @@ SECTION 5 — CAMPUS
 
   align-items: center;
 
-  padding: 22px 0;
+  padding: 16px 0;
 
   border-top: 1px solid #cfcfcf;
 
@@ -1846,7 +2062,7 @@ SECTION 5 — CAMPUS
 .campus-links a:last-child {
   border-bottom: 1px solid #d9d9d9;
 }
-.campus-links a span {
+/* .campus-links a span {
   display: inline-block;
 
   transition: transform 0.18s ease;
@@ -1856,6 +2072,47 @@ SECTION 5 — CAMPUS
 }
 .campus-links a:hover span {
   transform: translateX(6px);
+} */
+.campus-links a {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #111;
+
+  transition: color 0.25s ease;
+}
+
+.campus-links a .program-arrow {
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+
+  margin-top: 0;
+}
+
+.campus-links a .program-arrow svg {
+  width: 100%;
+  height: 100%;
+
+  color: currentColor;
+}
+
+.campus-links a:hover {
+  color: var(--color-crimson);
+}
+
+.campus-links a:hover .program-arrow svg {
+  animation: arrowSlide 0.45s ease;
 }
 .campus-image {
   height: 520px;
@@ -1955,7 +2212,7 @@ SECTION 6 — RESEARCH
 
   font-family: var(--font-body);
 
-  font-size: 18px;
+  font-size: 16px;
 
   font-weight: 700;
 
@@ -1966,7 +2223,7 @@ SECTION 6 — RESEARCH
   transition: color 0.18s ease;
 }
 
-.research-intro a span {
+/* .research-intro a span {
   transition: transform 0.18s ease;
 }
 
@@ -1976,6 +2233,47 @@ SECTION 6 — RESEARCH
 
 .research-intro a:hover span {
   transform: translateX(8px);
+} */
+.research-intro a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  color: #fff;
+
+  transition: color 0.18s ease;
+}
+
+.research-intro a .program-arrow {
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+
+  margin-top: 0;
+}
+
+.research-intro a .program-arrow svg {
+  width: 100%;
+  height: 100%;
+
+  color: currentColor;
+}
+
+.research-intro a:hover {
+  color: #9bcaf7;
+}
+
+.research-intro a:hover .program-arrow svg {
+  animation: arrowSlide 0.45s ease;
 }
 .research-column-title {
   margin: 0 0 16px;
@@ -2111,7 +2409,7 @@ SECTION 6 — RESEARCH
   transition: color 0.18s ease;
 }
 
-.research-more span {
+/* .research-more span {
   transition: transform 0.18s ease;
 }
 
@@ -2121,6 +2419,42 @@ SECTION 6 — RESEARCH
 
 .research-more:hover span {
   transform: translateX(8px);
+} */
+.research-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  color: #fff;
+  transition: color 0.18s ease;
+}
+
+.research-more .program-arrow {
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  margin-top: 0;
+}
+
+.research-more .program-arrow svg {
+  width: 100%;
+  height: 100%;
+
+  color: currentColor;
+}
+
+.research-more:hover {
+  color: #9bcaf7;
+}
+
+.research-more:hover .program-arrow svg {
+  animation: arrowSlide 0.45s ease;
 }
 .research-grid {
   --bs-gutter-x: 34px;
@@ -2219,14 +2553,14 @@ SECTION 7 — PRESS RELEASES
 
   color: white;
 
-  font-size: 20px;
+  font-size: 16px;
 
   font-weight: 700;
 
   transition: color 0.25s ease;
 }
 
-.press-all span {
+/* .press-all span {
   transition: transform 0.25s;
 }
 
@@ -2236,8 +2570,35 @@ SECTION 7 — PRESS RELEASES
 
 .press-all:hover span {
   transform: translateX(6px);
+} */
+
+.press-all .program-arrow {
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  margin-top: 0;
 }
 
+.press-all .program-arrow svg {
+  width: 100%;
+  height: 100%;
+
+  color: currentColor;
+}
+
+.press-all:hover {
+  color: #9bcaf7;
+}
+
+.press-all:hover .program-arrow svg {
+  animation: arrowSlide 0.45s ease;
+}
 /* divider */
 
 .press-divider {
@@ -2454,7 +2815,7 @@ SECTION 8 — STATISTICS
   transition: 0.25s;
 }
 
-.statistics-link span {
+/* .statistics-link span {
   transition: 0.25s;
 }
 
@@ -2464,8 +2825,34 @@ SECTION 8 — STATISTICS
 
 .statistics-link:hover span {
   transform: translateX(6px);
+} */
+.statistics-link .program-arrow {
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  margin-top: 0;
 }
 
+.statistics-link .program-arrow svg {
+  width: 100%;
+  height: 100%;
+
+  color: currentColor;
+}
+
+.statistics-link:hover {
+  color: var(--color-crimson);
+}
+
+.statistics-link:hover .program-arrow svg {
+  animation: arrowSlide 0.45s ease;
+}
 /* row */
 
 .statistics-row {
@@ -2651,9 +3038,9 @@ SECTION 9 — ANNUAL REPORT
 
   gap: 10px;
 
-  width: 228px;
+  width: 180px;
 
-  height: 68px;
+  height: 56px;
 
   background: #1f1f1f;
 
@@ -2674,9 +3061,9 @@ SECTION 9 — ANNUAL REPORT
   transition: none;
 }
 
-.annual-button span {
+/* .annual-button span {
   transition: transform 0.18s ease;
-}
+} */
 
 .annual-button:hover {
   background: #1f1f1f;
@@ -2684,10 +3071,30 @@ SECTION 9 — ANNUAL REPORT
   color: #9fc9f5;
 }
 
-.annual-button:hover span {
+/* .annual-button:hover span {
   transform: translateX(8px);
+} */
+.annual-button-arrow {
+  width: 26px;
+  height: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
 }
 
+.annual-button-arrow svg {
+  width: 100%;
+  height: 100%;
+
+  color: currentColor;
+}
+
+.annual-button:hover .annual-button-arrow svg {
+  animation: arrowSlide 0.45s ease;
+}
 /* RIGHT */
 
 .annual-images {
