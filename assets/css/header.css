@@ -47,7 +47,7 @@ HEADER COLUMNS
 
   padding-top: 0;
 
-  transition: all 0.35s ease;
+  transition: none;
 }
 
 /* Logo */
@@ -88,7 +88,7 @@ HEADER COLUMNS
 
   padding-top: 0;
 
-  transition: all 0.35s ease;
+  transition: none;
 }
 .about-logo img {
   height: 102px;
@@ -108,7 +108,7 @@ HEADER COLUMNS
 
   padding-top: 14px;
 
-  transition: all 0.35s ease;
+  transition: none;
 }
 /* prevent menu wrapping */
 .desktop-nav .nav-list {
@@ -221,7 +221,7 @@ body.about-page .site-header .container-fluid {
 
   align-items: stretch;
 
-  padding-left: 220px;
+  padding-left: 300px;
 
   padding-top: 14px;
 
@@ -371,9 +371,9 @@ body.about-page .site-header .container-fluid {
 
   background: transparent;
 
-  transition:
-    background-color 0.18s ease,
-    color 0.18s ease;
+  transition: none;
+  /* background-color 0.18s ease,
+    color 0.18s ease; */
 }
 
 /* icon size */
@@ -408,7 +408,10 @@ body.about-page .site-logo img {
 ABOUT PAGE
 SCROLLED STATE
 ====================================== */
-
+.header--transparent.scrolled .desktop-nav {
+  margin-left: 120px; /* adjust as needed */
+  transition: none;
+}
 .site-header.about-header.scrolled {
   background: rgba(164, 16, 52, 0.97);
 
@@ -458,7 +461,7 @@ MOVE ABOUT TO LOGO POSITION
 
   flex: 1;
 
-  padding-left: 38px;
+  padding-left: 0px;
 
   padding-top: 0;
 }
@@ -472,7 +475,7 @@ MOVE ABOUT TO LOGO POSITION
   flex: 1;
 
   padding-top: 0;
-  padding-left: 200px;
+  padding-left: 10px;
 }
 .site-header.about-header.scrolled .about-title {
   margin: 0;
@@ -498,6 +501,7 @@ MENU
   flex: 1;
 
   padding: 0;
+  padding-left: 180px;
 }
 
 .site-header.about-header.scrolled .about-secondary-nav::before {
@@ -519,7 +523,7 @@ MENU
 .site-header.about-header.scrolled .about-secondary-nav .nav-link {
   min-height: auto;
 
-  font-size: 15px;
+  font-size: 16px;
 
   line-height: 1;
 
@@ -1548,7 +1552,7 @@ SEARCH OVERLAY
 }
 
 .search-actions {
-  padding: 38px 42px;
+  padding: 38px 36px;
 }
 
 .search-button {
