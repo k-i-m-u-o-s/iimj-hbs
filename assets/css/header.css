@@ -820,7 +820,7 @@ Dropdown list
 
   min-height: 50px;
 
-  padding: 0 0 0 0;
+  padding: 0 18px 0 0;
 
   color: #111;
 
@@ -837,23 +837,30 @@ Dropdown list
 /* ARROW */
 
 .dropdown-list a::after {
-  content: "→";
+  content: "";
 
-  position: absolute;
+  width: 24px;
+  height: 24px;
 
-  right: 16px;
+  margin-left: auto;
+
+  flex-shrink: 0;
+
+  background: currentColor;
+
+  -webkit-mask: url("../icons/arrow-right-short.svg") no-repeat center;
+  -webkit-mask-size: contain;
+
+  mask: url("../icons/arrow-right-short.svg") no-repeat center;
+  mask-size: contain;
 
   opacity: 0;
 
   transform: translateX(-8px);
 
   transition:
-    opacity 0.22s ease,
-    transform 0.22s ease;
-
-  color: var(--color-crimson);
-
-  font-size: 22px;
+    opacity 0.25s ease,
+    transform 0.25s ease;
 }
 /* HOVER */
 
