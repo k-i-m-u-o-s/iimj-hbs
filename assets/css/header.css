@@ -26,11 +26,13 @@ HEADER INNER
 .site-header .container-fluid {
   display: flex;
 
-  align-items: center;
+  align-items: flex-start;
+  padding-top: 3px;
 
   justify-content: space-between;
 
-  height: 92px;
+  height: 97px;
+  /* background-color: #b11237; */
 
   transition: height 0.35s ease;
 }
@@ -47,6 +49,7 @@ HEADER COLUMNS
 
   transition: all 0.35s ease;
 }
+
 /* Logo */
 
 .site-logo {
@@ -57,7 +60,7 @@ HEADER COLUMNS
 .site-logo img {
   display: block;
   width: auto;
-  height: 72px;
+  height: 90px;
 
   transition:
     opacity 0.25s ease,
@@ -103,7 +106,7 @@ HEADER COLUMNS
 
   align-items: center;
 
-  padding-top: 0;
+  padding-top: 14px;
 
   transition: all 0.35s ease;
 }
@@ -115,7 +118,7 @@ HEADER COLUMNS
 
   justify-content: center;
 
-  gap: var(--space-5);
+  gap: 24px;
 
   height: 100%;
 }
@@ -218,7 +221,7 @@ body.about-page .site-header .container-fluid {
 
   align-items: stretch;
 
-  padding-left: 72px;
+  padding-left: 220px;
 
   padding-top: 14px;
 
@@ -459,11 +462,22 @@ MOVE ABOUT TO LOGO POSITION
 
   padding-top: 0;
 }
+.site-header.about-header.scrolled .header-right {
+  display: flex;
 
+  flex-direction: row;
+
+  align-items: center;
+
+  flex: 1;
+
+  padding-top: 0;
+  padding-left: 200px;
+}
 .site-header.about-header.scrolled .about-title {
   margin: 0;
 
-  margin-right: 54px;
+  margin-right: 160px;
 
   font-size: 18px;
 
@@ -495,7 +509,7 @@ MENU
 
   align-items: center;
 
-  gap: 36px;
+  gap: 24px;
 
   padding: 0;
 
@@ -604,6 +618,10 @@ text becomes white
 .header--transparent.scrolled .header-hamburger {
   color: var(--color-white);
 }
+.header--transparent.scrolled .nav-item:hover > .nav-link::after,
+.header--transparent.scrolled .nav-item.is-open > .nav-link::after {
+  background: #fff;
+}
 /* =====================================================
 DESKTOP DROPDOWNS
 STEP 4.9
@@ -627,14 +645,53 @@ Nav button
   display: inline-flex;
 
   align-items: center;
+  gap: 3px;
 
   min-height: 48px;
 
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 
   color: inherit;
 
   transition: color 0.18s ease;
+  padding-top: 16px;
+}
+/* .nav-link::before {
+  content: "";
+
+  width: 5px;
+  height: 5px;
+
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+
+  transform: rotate(45deg) translateY(-2px);
+
+  flex-shrink: 0;
+
+  order: 2;
+
+  transition: transform 0.18s ease;
+} */
+.nav-chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 12px;
+  height: 12px;
+
+  /* margin-left: 4px; */
+
+  flex-shrink: 0;
+}
+
+.nav-chevron svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  transition: transform 0.2s ease;
 }
 .nav-link::after {
   content: "";
@@ -643,7 +700,7 @@ Nav button
 
   left: 0;
 
-  bottom: 6px;
+  bottom: 4px;
 
   width: 100%;
 
@@ -686,11 +743,14 @@ Dropdown panel
 
   top: 100%;
 
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 14px;
 
-  min-width: 280px;
+  min-width: 0;
+  width: 260px;
 
-  padding: var(--space-4);
+  padding: 0;
 
   background: var(--color-white);
 
@@ -708,7 +768,7 @@ Dropdown panel
 
   visibility: hidden;
 
-  transform: translateY(14px);
+  /* transform: translateY(14px); */
 
   transition:
     opacity var(--transition),
@@ -741,6 +801,7 @@ Dropdown list
   position: relative;
 
   border-bottom: 1px solid #e6e6e6;
+  padding-left: 12px;
 }
 
 .dropdown-list li:last-child {
@@ -815,7 +876,7 @@ JS adds .is-open
 
   visibility: visible;
 
-  transform: translateY(0);
+  transform: translateX(-50%) translateY(0);
 
   pointer-events: auto;
 }

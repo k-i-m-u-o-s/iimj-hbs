@@ -50,7 +50,7 @@ MISSION TOPPER
 
   font-size: clamp(76px, 6.4vw, 126px);
 
-  font-weight: 800;
+  font-weight: 900;
 
   line-height: 1.25;
 
@@ -110,7 +110,7 @@ MISSION TOPPER
 
   right: 0;
 
-  bottom: -0.1em;
+  bottom: -0.003em;
 
   height: 14px;
 
@@ -147,6 +147,7 @@ MISSION TOPPER
   margin: 0 auto;
   height: 760px;
   width: 100%;
+  /* padding-top: 0; */
   /* padding-left: 20px; */
   /* padding-right: 20px; */
 }
@@ -157,6 +158,7 @@ MISSION TOPPER
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  /* padding-top: 0; */
 }
 
 /* HBS floating card */
