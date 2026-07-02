@@ -1,0 +1,268 @@
+/* ==========================================================
+   THEME SWITCHER
+========================================================== */
+
+.theme-switcher {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  z-index: 9999;
+}
+
+/* ==========================================================
+   PALETTE BUTTON
+========================================================== */
+
+.theme-toggle {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #ffffff;
+  color: var(--color-crimson);
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+
+  transition: 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-3px);
+}
+
+.theme-toggle i {
+  pointer-events: none;
+}
+
+/* ==========================================================
+   THEME MENU
+========================================================== */
+
+.theme-menu {
+  position: absolute;
+
+  right: 0;
+
+  bottom: 72px;
+
+  width: 220px;
+
+  padding: 14px;
+
+  background: #ffffff;
+
+  border-radius: 16px;
+
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+
+  display: none;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.theme-switcher.open .theme-menu {
+  display: flex;
+}
+
+/* ==========================================================
+   THEME OPTIONS
+========================================================== */
+
+.theme-option {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 11px 12px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  color: #222;
+
+  font-size: 0.95rem;
+
+  font-weight: 500;
+
+  transition: 0.25s;
+}
+
+.theme-option:hover {
+  background: #f4f4f4;
+}
+
+/* ==========================================================
+   COLOR DOTS
+========================================================== */
+
+.theme-dot {
+  width: 14px;
+
+  height: 14px;
+
+  border-radius: 50%;
+
+  flex-shrink: 0;
+}
+
+.theme-dot.crimson {
+  background: #a41034;
+}
+
+.theme-dot.blue {
+  background: #005b96;
+}
+
+.theme-dot.green {
+  background: #0b7a53;
+}
+
+.theme-dot.purple {
+  background: #6a1b9a;
+}
+
+/* ==========================================================
+   THEME DEFINITIONS
+========================================================== */
+
+/* ==========================================================
+   HBS
+========================================================== */
+
+[data-theme="crimson"] {
+  --primary: #a41034;
+  --primary-dark: #7a0b22;
+  --primary-light: #be0d38;
+
+  --tertiary: #aac8eb;
+
+  --press: #1b1b1b;
+  --research: #000000;
+  --insights: #222222;
+
+  --cardoverlay: #222222;
+
+  --footercta: #000000;
+  --footer: #222222;
+
+  --global: #222222;
+
+  --hoverlight: #99cefb;
+}
+
+/* ==========================================================
+   IIMJ
+========================================================== */
+
+[data-theme="blue"] {
+  --primary: #be0d38;
+  --primary-dark: #003f6d;
+  --primary-light: #2c8fdd;
+
+  --tertiary: #aac8eb;
+
+  --press: #18344f;
+  --research: #102132;
+  --insights: #233a50;
+
+  --cardoverlay: #233a50;
+
+  --footercta: #102132;
+  --footer: #18344f;
+
+  --global: #18344f;
+
+  /* --hoverlight: #c7ae71; */
+  --hoverlight: #a39f9f;
+}
+
+/* ==========================================================
+   EMERALD GREEN
+========================================================== */
+
+[data-theme="green"] {
+  --primary: #005b96;
+  --primary-dark: #003f6d;
+  --primary-light: #2c8fdd;
+
+  --tertiary: #d9eeff;
+
+  --press: #18344f;
+  --research: #102132;
+  --insights: #233a50;
+
+  --cardoverlay: #233a50;
+
+  --footercta: #102132;
+  --footer: #18344f;
+
+  --global: #18344f;
+
+  --hoverlight: #a41034;
+}
+
+/* ==========================================================
+   ROYAL PURPLE
+========================================================== */
+
+[data-theme="purple"] {
+  --primary: #6a1b9a;
+  --primary-dark: #4a126c;
+  --primary-light: #9154cf;
+
+  --tertiary: #f0e6ff;
+
+  --press: #2e2143;
+  --research: #1c1530;
+  --insights: #3b2c55;
+
+  --cardoverlay: #3b2c55;
+
+  --footercta: #1c1530;
+  --footer: #2e2143;
+
+  --global: #2e2143;
+
+  --hoverlight: #ddcbff;
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 768px) {
+  .theme-switcher {
+    right: 18px;
+    bottom: 18px;
+  }
+
+  .theme-toggle {
+    width: 52px;
+    height: 52px;
+  }
+
+  .theme-menu {
+    width: 190px;
+  }
+}

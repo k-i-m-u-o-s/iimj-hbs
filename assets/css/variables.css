@@ -12,8 +12,18 @@ THEME COLORS
 
   --primary: #a41034;
   --primary-dark: #7a0b22;
+  --primary-light: #be0d38;
 
   --secondary: #1d1d1d;
+  --tertiary: #aac8eb;
+  --press: #1b1b1b;
+  --research: #000000;
+  --insights: #222222;
+  --cardoverlay: #222222;
+  --footercta: #000000;
+  --footer: #222222;
+  --global: #222222;
+  --hoverlight: #99cefb;
 
   --surface: #f5f4f0;
 
@@ -40,8 +50,18 @@ PROJECT COLORS
   --color-crimson: var(--primary);
 
   --color-crimson-dark: var(--primary-dark);
+  --color-crimson-light: var(--primary-light);
 
   --color-black: var(--secondary);
+  --color-tertiary: var(--tertiary);
+  --color-press: var(--press);
+  --color-research: var(--research);
+  --color-insights: var(--insights);
+  --color-cardoverlay: var(--cardoverlay);
+  --color-footercta: var(--footercta);
+  --color-footer: var(--footer);
+  --color-global: var(--global);
+  --color-hoverlight: var(--hoverlight);
 
   --color-offwhite: var(--surface);
 

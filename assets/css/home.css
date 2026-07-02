@@ -204,7 +204,7 @@ MISSION TOPPER
 
 /* hover */
 .mission-card:hover {
-  background: #a41034;
+  background: var(--color-crimson);
 
   box-shadow:
     0 14px 28px rgba(0, 0, 0, 0.06),
@@ -335,7 +335,7 @@ HBS HERO ARROWS
 /* hover */
 
 .mission-arrow:hover {
-  background: #a41034;
+  background: var(--color-crimson);
 
   color: #fff;
 
@@ -539,7 +539,7 @@ SECTION 2 — PROGRAMS TEASE
 /* ---------------------------------- */
 
 .program-card:hover {
-  background: #1d1d1d;
+  background: var(--color-cardoverlay);
 }
 /* .program-card:hover .program-arrow span {
   animation: programArrow 0.45s ease forwards;
@@ -659,7 +659,7 @@ SECTION 3 — COMMENCEMENT CTA
 
   padding: 0 40px;
 
-  background: #9bcaf7;
+  background: var(--color-hoverlight);
 
   color: #1d1d1d;
 
@@ -1029,7 +1029,7 @@ SECTION 6 — INSIGHTS
 ========================================== */
 
 .insights-section {
-  background: #1f1f1f;
+  background: var(--color-insights);
 
   padding: 90px 0 20px 0;
 
@@ -1091,7 +1091,7 @@ SECTION 6 — INSIGHTS
 }
 
 .insights-link:hover {
-  color: #9cc8f6;
+  color: var(--color-hoverlight);
 }
 
 .insights-link:hover span {
@@ -1157,7 +1157,7 @@ SECTION 6 — INSIGHTS
 }
 
 .section-eyebrow {
-  color: #7eb6ff;
+  color: var(--color-hoverlight);
 
   font-size: 14px;
 
@@ -1189,7 +1189,7 @@ SECTION 6 — INSIGHTS
 }
 
 .featured-article:hover h3 {
-  color: #9bcaf7;
+  color: var(--color-hoverlight);
 
   text-decoration: underline;
 
@@ -1284,7 +1284,7 @@ SECTION 6 — INSIGHTS
   font-weight: 400;
 }
 .feed-card:hover .feed-text h4 {
-  color: #9bcaf7;
+  color: var(--color-hoverlight);
 
   text-decoration: underline;
 
@@ -1356,7 +1356,7 @@ SECTION 8 — DISTINCTIVE
 
   height: 2px;
 
-  background: #a51c30;
+  background: var(--color-crimson);
 
   margin-top: 14px;
 
@@ -1518,10 +1518,10 @@ SECTION 3 — SPLITTOPPER
 .about-topper {
   background: linear-gradient(
     90deg,
-    #a51c30 0%,
-    #a51c30 50%,
-    #bc0038 50%,
-    #bc0038 100%
+    var(--color-crimson) 0%,
+    var(--color-crimson) 50%,
+    var(--color-crimson-light) 50%,
+    var(--color-crimson-light) 100%
   );
 
   padding-top: 100px;
@@ -1859,7 +1859,7 @@ SECTION 4 — PROGRAMS
 
   padding: 26px 22px 26px;
 
-  background: #a7c0e0;
+  background: var(--color-tertiary);
 
   text-decoration: none;
 
@@ -1937,7 +1937,7 @@ SECTION 4 — PROGRAMS
   color: currentColor;
 }
 .about-program-card:hover {
-  background: #1d1d1d;
+  background: var(--color-cardoverlay);
 }
 .about-program-card:hover h3 {
   color: white;
@@ -2150,7 +2150,7 @@ SECTION 6 — RESEARCH
 ==================================== */
 
 .about-research {
-  background: #000;
+  background: var(--color-research);
   padding-top: 112px;
   padding-bottom: 108px;
   color: #fff;
@@ -2230,7 +2230,7 @@ SECTION 6 — RESEARCH
 }
 
 .research-intro a:hover {
-  color: #9bcaf7;
+  color: var(--color-hoverlight);
 }
 
 .research-intro a:hover span {
@@ -2271,7 +2271,7 @@ SECTION 6 — RESEARCH
 }
 
 .research-intro a:hover {
-  color: #9bcaf7;
+  color: var(--color-hoverlight);
 }
 
 .research-intro a:hover .program-arrow svg {
@@ -2346,7 +2346,7 @@ SECTION 6 — RESEARCH
     text-decoration-color 0.18s ease;
 }
 .research-item:hover .research-copy h4 {
-  color: #9bcaf7;
+  color: var(--color-hoverlight);
 
   text-decoration: underline;
 
@@ -2372,7 +2372,7 @@ SECTION 6 — RESEARCH
   color: rgba(255, 255, 255, 0.72);
 }
 .research-item:hover h4 {
-  color: #6ea8ff;
+  color: var(--color-hoverlight);
 }
 /* .research-column::after{
     content:"";
@@ -2416,7 +2416,7 @@ SECTION 6 — RESEARCH
 }
 
 .research-more:hover {
-  color: #9bcaf7;
+  color: var(--color-hoverlight);
 }
 
 .research-more:hover span {
@@ -2452,7 +2452,7 @@ SECTION 6 — RESEARCH
 }
 
 .research-more:hover {
-  color: #9bcaf7;
+  color: var(--color-hoverlight);
 }
 
 .research-more:hover .program-arrow svg {
@@ -2494,7 +2494,7 @@ SECTION 7 — PRESS RELEASES
 ========================================== */
 
 .about-press {
-  background: #1b1b1b;
+  background: var(--color-press);
 
   padding-top: 80px;
 
@@ -2567,7 +2567,7 @@ SECTION 7 — PRESS RELEASES
 }
 
 .press-all:hover {
-  color: #6ea8ff;
+  color: var(--color-hoverlight);
 }
 
 .press-all:hover span {
@@ -2595,7 +2595,7 @@ SECTION 7 — PRESS RELEASES
 }
 
 .press-all:hover {
-  color: #9bcaf7;
+  color: var(--color-hoverlight);
 }
 
 .press-all:hover .program-arrow svg {
@@ -2647,7 +2647,7 @@ ABOUT — SECTION 7 — PRESS RELEASES
 
   letter-spacing: -0.02em;
 
-  color: #8fc0ff; /* HBS light blue */
+  color: var(--color-hoverlight); /* HBS light blue */
 
   margin-bottom: 18px;
 
@@ -2701,7 +2701,7 @@ ABOUT — SECTION 7 — PRESS RELEASES
 /* hover → title only */
 
 .press-card:hover h3 {
-  color: #9bcaf7;
+  color: var(--color-hoverlight);
 
   text-decoration: underline;
 
@@ -2964,7 +2964,7 @@ SECTION 9 — ANNUAL REPORT
 /* full blue panel */
 
 .annual-panel {
-  background: #a7c0e0; /* exact muted HBS blue */
+  background: var(--color-tertiary); /* exact muted HBS blue */
 
   padding: 0px 36px 8px 36px;
 
@@ -3046,7 +3046,7 @@ SECTION 9 — ANNUAL REPORT
 
   background: #1f1f1f;
 
-  color: #9fc9f5;
+  color: var(--color-tertiary);
 
   font-family: var(--font-body);
 
@@ -3070,7 +3070,7 @@ SECTION 9 — ANNUAL REPORT
 .annual-button:hover {
   background: #1f1f1f;
 
-  color: #9fc9f5;
+  color: var(--color-tertiary);
 }
 
 /* .annual-button:hover span {
